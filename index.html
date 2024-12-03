@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fill the form</h1>
+    <form action="/formUploads" method="POST" enctype="multipart/form-data">
+        <label for="name">Person Name</label>
+        <input id="name" type="text" name="name" >
+        <br>
+        <br>
+        <label for="galleryName">Gallery Name</label>
+        <input id="galleryName" type="text" name="galleryName" > 
+        <br>
+        <br>
+        <label for="avatarImage">Choose avatar image</label>
+        <input type="file"  id="avatarImage" name="avatarImage" accept="image/*">
+        <br>
+        <br>
+        <label for="galleryImage">Choose gallery images (Max. 5)</label>
+        <input type="file" multiple  id="galleryImage" name="galleryImage">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
